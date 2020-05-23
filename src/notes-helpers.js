@@ -8,7 +8,7 @@ export const findNote = (notes=[], noteId) =>
 export const getNotesForFolder = (notes=[], folderId) => (
   (!folderId)
     ? notes
-    : notes.filter(note => note.folderId === parseInt(folderId))
+    : notes.filter(note => note.folder_id === parseInt(folderId))
 )
 
 export const countNotesForFolder = (notes=[], folderId) =>
